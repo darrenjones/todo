@@ -1,0 +1,170 @@
+.dark {
+  color: #333;
+  background: #ddd;
+}
+
+.light {
+  background: #333;
+  color: #ddd;
+}
+
+.app.dark {
+  color: #333;
+  background: #ddd;
+}
+
+.app.light {
+  background: #333;
+  color: #ddd;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 4rem;
+  margin: 0 2rem;
+  max-width: 600px;
+  height: 100vh;
+}
+
+.todo-info {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+form button {
+  font-size: 1.2rem;
+  padding: 0 1.4rem;
+}
+
+.todo-completed-button {
+  margin-right: 1rem;
+  padding: .5rem;
+  border: 1px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.todo-completed-button.completed {
+  background: #4ded30;
+  border: 1px solid #666;
+}
+
+.todo-item {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.light .todo-item {
+  color: #333;
+  background-color: #eee;
+
+}
+
+.dark .todo-item {
+  background-color: #ccc;
+}
+
+.todo-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.todo-title.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-group button {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem .5rem;
+  margin-left: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+}
+
+.todo-complete {
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  flex-basis: 25px;
+  flex-shrink: 0;
+  height: 25px;
+  justify-content: center;
+  padding: 5px;
+  transition: background-color .3s ease;
+}
+
+.todo-complete svg {
+  stroke: #fff;
+  fill: blue;
+  align-items: center; 
+  display: flex; 
+  height: 100%; 
+  justify-content: center; 
+  width: 100%;
+}
+
+.theme-toggle-button {
+  border-radius: 50%;
+  margin: 2rem;
+  float: right;
+  padding: 0.5rem;
+}
+
+.dark .theme-toggle-button {
+  color: #fff;
+  background: #333;
+}
+
+.loading {
+  color: #4ded30;
+}
+
+.error {
+  color: #f00;
+}
+
+.loading, .error {
+  position: absolute;
+  z-index: 999;
+}
