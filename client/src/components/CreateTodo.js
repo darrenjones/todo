@@ -7,7 +7,6 @@ const CreateTodo = () => {
   const [todo, setTodo] = useState({ title: "", completed: false, });
 
   const [createTodo, { loading, error }] = useMutation(CREATE_TODO);
-  if (todo.title === "") return
   if (loading) return <p className="loading">Loading...</p>;
   if (error) return <p className="error">Error!</p>;
 
